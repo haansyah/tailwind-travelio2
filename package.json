@@ -37,6 +37,7 @@
     "webpack-merge": "^5.4.0"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.3.2",
     "full": "^1.0.1"
   }
 }

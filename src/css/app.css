@@ -1,3 +1,115 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+@layer components {
+  .font-lato {
+    font-family: "Lato", sans-serif;
+  }
+
+  .font-lora {
+    font-family: "Lora", serif;
+  }
+
+  .owl-one.owl-carousel {
+    width: 100%;
+    height: 630px;
+  }
+
+  .leading-title-banner {
+    line-height: 65px;
+  }
+
+  .owl-one .slide {
+    width: 100%;
+    height: 630px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .owl-one .slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 630px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .border-form {
+    height: 593px;
+    width: 420px;
+  }
+
+  .card {
+    height: 400px;
+    overflow: hidden;
+  }
+
+  .owl-two.owl-drag .owl-item {
+    width: 285px !important;
+  }
+
+  .card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(to top, #000, transparent);
+    transition: 0.5s;
+  }
+
+  .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+  .item-title {
+    z-index: 3;
+  }
+
+  .testimonial-image {
+    width: 464px;
+    height: 540px;
+  }
+
+  .testi-banner {
+    width: 464px;
+  }
+
+  .kutip {
+    font-size: 200px;
+  }
+
+  .banner-image {
+    height: 630px;
+    width: 1282px;
+    margin-right: 20px !important;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .rounded-60px {
+      border-radius: 0 60px 0 0;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .top-navbar {
+      display: -webkit-inline-box !important;
+      display: -ms-inline-flexbox !important;
+      display: inline-flex !important;
+    }
+  }
+}
